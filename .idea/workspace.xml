@@ -4,29 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1f07ff-6052-4eb6-9be3-18cabae6e3e5" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/request.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/request.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/NitWikit-Domain.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/backend/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/backend/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/backend/cf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/backend/dnspod.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/backend/freedns.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/checker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/issue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/payload.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="4c1f07ff-6052-4eb6-9be3-18cabae6e3e5" name="更改" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/checker.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,12 +83,27 @@
       <workItem from="1727671712852" duration="4212000" />
       <workItem from="1727678453349" duration="906000" />
       <workItem from="1727681337385" duration="9000" />
-      <workItem from="1727681366469" duration="9162000" />
+      <workItem from="1727681366469" duration="9254000" />
+      <workItem from="1727696696414" duration="20000" />
+      <workItem from="1727700963212" duration="335000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1727694090028</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727694090028</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NitWikit_Domain$cloudflare.coverage" NAME="cloudflare 覆盖结果" MODIFIED="1727653289328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend" />

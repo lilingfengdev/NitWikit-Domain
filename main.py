@@ -27,9 +27,9 @@ domain={
 def main():
     init_payload()
     try:
-        check()
+        check(domain.keys())
     except CheckError as e:
-        issue.create_commit(e.__cause__)
+        issue.create_commit(e.msg)
         issue.close()
         exit()
 
@@ -50,6 +50,9 @@ def main():
             record_type="SRV",
             record_value=f"5 0 {Request.record_target_port} {Request.record_target}"
         )
+
+    issue.create_commit(f"成功创建,现在你可以通过`{Request.subdomain}.{Request.domain}`访问了(DNS更新需要一定时间)")
+    issue.close()
 
 if __name__ == '__main__':
     main()

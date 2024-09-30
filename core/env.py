@@ -1,8 +1,4 @@
 import os
-import core.backend as dns
-
-
-
 class CloudFlareInfo:
     api_token=os.environ.get("CLOUDFLARE_API_TOKEN"),
 class DnsPodInfo:
