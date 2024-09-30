@@ -1,0 +1,74 @@
+name: 子域名申请
+description: 申请一个子域名
+title: "[申请]: "
+labels: ["request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎申请子域名,请先读完笨蛋文档
+  - type: input
+    id: subdomain
+    attributes:
+      label: 子域名名称
+      description: 你需要的子域名
+      placeholder: yizhan
+    validations:
+      required: true
+  - type: dropdown
+    id: domain
+    attributes:
+      label: 主域名
+      description: 主域名
+      options:
+        - mcfun.us.kg
+        - nitwikit.us.kg
+        - yizhan.us.kg
+        - playmc.imc.rip
+        - mc.imc.rip
+        - llf.myredirect.us
+        - mc.lookin.at
+        - mcfun.findhere.org
+        - mcfun.lookin.at
+        - nitwikit.myfw.us
+        - playmc.lookin.at
+        - playmc.myfw.us
+        - playmc.rr.nu
+        - yizhan.findhere.org
+        - yizhan.myfw.us
+        - yizhan.rr.nu
+    validations:
+      required: true
+  - type: dropdown
+    id: record-type
+    attributes:
+      label: 记录类型
+      description: 记录类型(IPV4:A,IPV6:AAAA)
+      options:
+        - A
+        - AAAA
+        - CNAME
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: 解析目标
+      description: 需要解析到的地址(不需要填端口)
+      placeholder: 114.51.4.1
+    validations:
+      required: true
+  - type: input
+    id: port
+    attributes:
+      label: 解析目标端口的端口(用于SRV)
+      placeholder: "11451"
+    validations:
+      required: true
+  - type: checkboxes
+    id: srv
+    attributes:
+      label: 创建 SRV
+      description: 创建SRV解析
+      options:
+        - label: 创建

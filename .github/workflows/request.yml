@@ -1,0 +1,40 @@
+name: Conversion Request
+on:
+  issues:
+    types:
+      - labeled
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    if: github.event.label.name == 'request'
+    permissions:
+      issues: read
+    timeout-minutes: 2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+            python-version: "3.11"
+      - name: Install Depend
+        run: pip install -r requirements.txt
+      - name: Run Issue form parser
+        id: parse
+        uses: peter-murray/issue-forms-body-parser@v4.0.0
+        with:
+          issue_id: ${{ github.event.issue.number }}
+          separator: '###'
+      - name: Chat
+        id: chat
+        run: python main.py
+        with:
+          GITHUB_ISSUE_NUMBER: ${{ github.event.issue.number }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          DNSPOD_USER_ID: ${{ secrets.DNSPOD_USER_ID}}
+          DNSPOD_USER_TOKEN: ${{ secrets.DNSPOD_USER_TOKEN}}
+          FREE_DNS_EMAIL: ${{ secrets.FREE_DNS_EMAIL}}
+          FREE_DNS_PASSWORD: ${{ secrets.FREE_DNS_PASSWORD}}
+          PAYLOAD: ${{ steps.parse.outputs.payload }}
+
