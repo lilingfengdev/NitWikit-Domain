@@ -10,6 +10,10 @@ disable_register=[
     "lilingfeng",
     "official",
     "fuckccf",
+    "home",
+    "china",
+    "blog",
+    "page",
 ]
 
 class CloudFlareInfo:

@@ -30,6 +30,11 @@ domain={
     "playmc.com.mp": dns.ExitDNS,
     "playmc.myredirect.us": dns.ExitDNS,
     "pvp.line.pm": dns.ExitDNS,
+    "pvp.findhere.org": dns.ExitDNS,
+    "mcpvp.rr.nu": dns.ExitDNS,
+    "mc.isgre.at": dns.ExitDNS,
+    "pvp.isgre.at": dns.ExitDNS,
+    "xixi.isgre.at": dns.ExitDNS,
 }
 
 def main():

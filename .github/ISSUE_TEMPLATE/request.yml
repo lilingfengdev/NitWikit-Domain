@@ -44,6 +44,11 @@ body:
         - playmc.com.mp
         - playmc.myredirect.us
         - pvp.line.pm
+        - pvp.findhere.org
+        - mcpvp.rr.nu
+        - mc.isgre.at
+        - pvp.isgre.at
+        - xixi.isgre.at
     validations:
       required: true
   - type: dropdown
