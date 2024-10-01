@@ -1,6 +1,8 @@
+import time
 
 from core.env import *
 from core.issue import *
+import core.backend as dns
 from core.checker import *
 from core.backend.base import DNS
 from core.payload import init_payload
@@ -11,28 +13,35 @@ domain={
     "yizhan.us.kg":dns.CloudFlare,
     "playmc.imc.rip":dns.DnsPod,
     "mc.imc.rip":dns.DnsPod,
-    "llf.myredirect.us":dns.FreeDNS,
-    "mc.lookin.at":dns.FreeDNS,
-    "mcfun.findhere.org":dns.FreeDNS,
-    "mcfun.lookin.at":dns.FreeDNS,
-    "nitwikit.myfw.us":dns.FreeDNS,
-    "playmc.lookin.at":dns.FreeDNS,
-    "playmc.myfw.us":dns.FreeDNS,
-    "playmc.rr.nu":dns.FreeDNS,
-    "yizhan.findhere.org":dns.FreeDNS,
-    "yizhan.myfw.us":dns.FreeDNS,
-    "yizhan.rr.nu":dns.FreeDNS,
+    "llf.myredirect.us":dns.ExitDNS,
+    "mc.lookin.at":dns.ExitDNS,
+    "mcfun.findhere.org":dns.ExitDNS,
+    "mcfun.lookin.at":dns.ExitDNS,
+    "nitwikit.myfw.us":dns.ExitDNS,
+    "playmc.lookin.at":dns.ExitDNS,
+    "playmc.myfw.us":dns.ExitDNS,
+    "playmc.rr.nu":dns.ExitDNS,
+    "yizhan.findhere.org":dns.ExitDNS,
+    "yizhan.myfw.us":dns.ExitDNS,
+    "yizhan.rr.nu":dns.ExitDNS,
+    "int.linkpc.net":dns.ExitDNS,
+    "mcpvp.com.mp":dns.ExitDNS,
+    "playmc.cloud-ip.biz":dns.ExitDNS,
+    "playmc.com.mp": dns.ExitDNS,
+    "playmc.myredirect.us": dns.ExitDNS,
+    "pvp.line.pm": dns.ExitDNS,
 }
 
 def main():
     init_payload()
+    issue.create_commit("欢迎使用笨蛋文档域名服务！现在正在为你检查,请稍后")
     try:
         check(domain.keys())
     except CheckError as e:
-        issue.create_commit(e.msg)
+        issue.create_commit(f"检查错误:`{e.msg}`,请更正后重新申请")
         issue.close()
         exit()
-
+    issue.create_commit("检查成功,开始创建DNS记录")
     manager:DNS=domain[Request.domain](Request.domain)
     manager.create_record(
         subdomain=Request.subdomain,
@@ -42,7 +51,7 @@ def main():
     manager.create_record(
         subdomain="_create."+Request.subdomain,
         record_type="TXT",
-        record_value=issue.owner()
+        record_value=f"{issue.owner()}:{time.time()}"
     )
     if Request.srv:
         manager.create_record(

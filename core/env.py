@@ -1,13 +1,25 @@
 import os
+
+disable_register=[
+    "dnspodcheck",
+    "www",
+    "yizhan",
+    "nitwikit",
+    "lezi",
+    "llf",
+    "lilingfeng",
+    "official",
+    "fuckccf",
+]
+
 class CloudFlareInfo:
     api_token=os.environ.get("CLOUDFLARE_API_TOKEN"),
 class DnsPodInfo:
     user_id=os.environ.get("DNSPOD_USER_ID"),
     user_token=os.environ.get("DNSPOD_USER_TOKEN"),
 
-class FreeDNSInfo:
-    email=os.environ.get("FREE_DNS_EMAIL"),
-    password=os.environ.get("FREE_DNS_PASSWORD"),
+class ExitDNSInfo:
+    api_token=os.environ.get("EXITDNS_API_TOKEN"),
 
 class GitHubInfo:
     token=os.environ.get("GITHUB_TOKEN")

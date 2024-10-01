@@ -1,6 +1,7 @@
 import ipaddress
 import socket
-from env import Request
+from env import Request,disable_register
+
 class CheckError(Exception):
     def __init__(self, msg):
         self.msg = msg
@@ -14,18 +15,24 @@ def check(domain_list):
     else:
         raise CheckError("域名已被使用")
 
+    if Request.subdomain in disable_register:
+        raise CheckError("子域名不允许注册")
+
     if not Request.record_target_port.isalpha():
         raise CheckError("端口必须为数字")
 
-    if not (65535 > int(Request.record_target_port) > 1):
-        raise CheckError("端口必须在1~65535之间")
+    if Request.srv:
+        if not (65535 > int(Request.record_target_port) > 1):
+            raise CheckError("端口必须在1~65535之间")
 
     if Request.record_type in ["A","AAAA"]:
         try:
             ip=ipaddress.ip_address(Request.record_target)
             assert ip.is_global
-        except (ValueError,AssertionError):
+        except ValueError:
             raise CheckError("目标IP地址不合法")
+        except AssertionError:
+            raise CheckError("目标IP地址不是公网地址")
     elif Request.record_type == "CNAME":
         try:
             socket.gethostbyname(Request.record_target)
