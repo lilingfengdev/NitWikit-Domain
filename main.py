@@ -1,6 +1,6 @@
 import time
 
-from core.env import *
+from core.hook import *
 from core.issue import *
 import core.backend as dns
 from core.checker import *
@@ -41,6 +41,7 @@ domain={
 }
 
 def main():
+    sys.excepthook = except_hook
     init_payload()
     issue.create_commit("欢迎使用笨蛋文档域名服务！现在正在为你检查,请稍后")
     try:

@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c1f07ff-6052-4eb6-9be3-18cabae6e3e5" name="更改" comment="add some domain">
-      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/request.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/request.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/hook.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/backend/dnsexit.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/dnsexit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/issue.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/issue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,25 +34,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.cf.executor&quot;: &quot;Run&quot;,
-    &quot;Python.checker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.cloudflare.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dnsexit.executor&quot;: &quot;Run&quot;,
-    &quot;Python.freedns.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/NitWikit-Domain&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.cf.executor": "Run",
+    "Python.checker.executor": "Run",
+    "Python.cloudflare.executor": "Run",
+    "Python.dnsexit.executor": "Run",
+    "Python.freedns.executor": "Run",
+    "Python.hook.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/NitWikit-Domain",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -93,7 +91,8 @@
       <workItem from="1727753159233" duration="46000" />
       <workItem from="1727756914741" duration="7984000" />
       <workItem from="1727788190265" duration="2447000" />
-      <workItem from="1727825287060" duration="2348000" />
+      <workItem from="1727825287060" duration="2667000" />
+      <workItem from="1727846273664" duration="1093000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -127,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727790831291</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add some domain">
+      <option name="closed" value="true" />
+      <created>1727829575723</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727829575723</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +161,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NitWikit_Domain$cloudflare.coverage" NAME="cloudflare 覆盖结果" MODIFIED="1727653289328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend" />
     <SUITE FILE_PATH="coverage/NitWikit_Domain$cf.coverage" NAME="cf 覆盖结果" MODIFIED="1727661357061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend" />
+    <SUITE FILE_PATH="coverage/NitWikit_Domain$hook.coverage" NAME="hook 覆盖结果" MODIFIED="1727847745682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.github" />
     <SUITE FILE_PATH="coverage/NitWikit_Domain$freedns.coverage" NAME="freedns 覆盖结果" MODIFIED="1727759311784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend" />
     <SUITE FILE_PATH="coverage/NitWikit_Domain$dnsexit.coverage" NAME="dnsexit 覆盖结果" MODIFIED="1727779461680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend" />
     <SUITE FILE_PATH="coverage/NitWikit_Domain$checker.coverage" NAME="checker 覆盖结果" MODIFIED="1727675876868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
