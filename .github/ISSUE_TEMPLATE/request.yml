@@ -49,6 +49,9 @@ body:
         - mc.isgre.at
         - pvp.isgre.at
         - xixi.isgre.at
+        - mcpvp.blogu.tc
+        - xixi.san.tc
+        - lilf.dev.tc
     validations:
       required: true
   - type: dropdown

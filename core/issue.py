@@ -17,4 +17,5 @@ class GithubIssue:
         self.issue.lock("已完成")
     def owner(self):
         return self.issue.user
+
 issue = GithubIssue()

@@ -26,6 +26,7 @@ class ExitDNS(DNS):
             })
         )
 
-
+    def delete_record(self, subdomain):
+        pass
     def connect(self):
         pass

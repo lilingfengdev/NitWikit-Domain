@@ -35,6 +35,9 @@ domain={
     "mc.isgre.at": dns.ExitDNS,
     "pvp.isgre.at": dns.ExitDNS,
     "xixi.isgre.at": dns.ExitDNS,
+    "mcpvp.blogu.tc": dns.ExitDNS,
+    "xixi.san.tc": dns.ExitDNS,
+    "lilf.dev.tc": dns.ExitDNS,
 }
 
 def main():
