@@ -52,6 +52,7 @@ def main():
         exit()
     issue.create_commit("检查成功,开始创建DNS记录")
     manager:DNS=domain[Request.domain](Request.domain)
+    manager.connect()
     manager.create_record(
         subdomain=Request.subdomain,
         record_type=Request.record_type,
