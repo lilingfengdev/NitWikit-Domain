@@ -114,7 +114,7 @@
       <workItem from="1727851397191" duration="10000" />
       <workItem from="1727863860070" duration="455000" />
       <workItem from="1727912032300" duration="1675000" />
-      <workItem from="1728048036099" duration="1586000" />
+      <workItem from="1728048036099" duration="2023000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -204,7 +204,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728050010836</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix workflow">
+      <option name="closed" value="true" />
+      <created>1728050307262</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728050307262</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix workflow">
+      <option name="closed" value="true" />
+      <created>1728050456818</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728050456818</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +245,16 @@
     <MESSAGE value="add hook" />
     <MESSAGE value="fix workflow" />
     <option name="LAST_COMMIT_MESSAGE" value="fix workflow" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/core/hook.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NitWikit_Domain$cloudflare.coverage" NAME="cloudflare 覆盖结果" MODIFIED="1727653289328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend" />
