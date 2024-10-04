@@ -1,6 +1,7 @@
 import github
 from core.env import GitHubInfo
 
+
 class GithubIssue:
     def __init__(self):
         self.repo = github.Github(GitHubInfo.token).get_repo("lilingfengdev/NitWikit-Domain")
@@ -15,7 +16,9 @@ class GithubIssue:
     def close(self):
         self.issue.edit(state='closed')
         self.issue.lock("已完成")
+
     def owner(self):
         return self.issue.user
+
 
 issue = GithubIssue()

@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.label.name == 'request'
     permissions:
-      issues: read
+      issues: write
     timeout-minutes: 2
     steps:
       - name: Checkout
@@ -25,6 +25,8 @@ jobs:
         with:
           issue_id: ${{ github.event.issue.number }}
           separator: '###'
+          label_marker_start: ''
+          label_marker_end: ''
       - run: python main.py
         env:
           GITHUB_ISSUE_NUMBER: ${{ github.event.issue.number }}
