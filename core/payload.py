@@ -9,5 +9,5 @@ def init_payload():
     Request.domain = payload["主域名"]
     Request.record_type = payload["记录类型"]
     Request.record_target = payload["解析目标"]
-    Request.record_target_port = payload["解析目标端口的端口(用于SRV)"]
+    Request.record_target_port = payload["解析目标端口的端口(启用SRV必填)"]
     Request.srv = payload["创建 SRV"]["创建"]
