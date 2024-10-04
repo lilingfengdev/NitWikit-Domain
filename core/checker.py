@@ -21,10 +21,9 @@ def check(domain_list):
     if Request.subdomain in disable_register:
         raise CheckError("子域名不允许注册")
 
-    if not Request.record_target_port.isalpha():
-        raise CheckError("端口必须为数字")
-
     if Request.srv:
+        if not Request.record_target_port.isalpha():
+            raise CheckError("端口必须为数字")
         if not (65535 > int(Request.record_target_port) > 1):
             raise CheckError("端口必须在1~65535之间")
 
