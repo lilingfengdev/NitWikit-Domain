@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1f07ff-6052-4eb6-9be3-18cabae6e3e5" name="更改" comment="add hook" />
+    <list default="true" id="4c1f07ff-6052-4eb6-9be3-18cabae6e3e5" name="更改" comment="fix workflow" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,18 +20,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "lilingfengdev"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lilingfengdev&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/lilingfengdev/NitWikit-Domain.git",
-    "accountId": "4d5323c2-9440-4cbf-97eb-e6061310819f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lilingfengdev/NitWikit-Domain.git&quot;,
+    &quot;accountId&quot;: &quot;4d5323c2-9440-4cbf-97eb-e6061310819f&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -52,7 +52,10 @@
     "Python.dnspod.executor": "Run",
     "Python.freedns.executor": "Run",
     "Python.hook.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.codeium.enabled": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "D:/NitWikit-Domain",
     "node.js.detected.package.eslint": "true",
@@ -111,6 +114,7 @@
       <workItem from="1727851397191" duration="10000" />
       <workItem from="1727863860070" duration="455000" />
       <workItem from="1727912032300" duration="1675000" />
+      <workItem from="1728048036099" duration="366000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -168,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727912043628</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix workflow">
+      <option name="closed" value="true" />
+      <created>1728048103607</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728048103607</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,15 +203,16 @@
     <MESSAGE value="using exitdns and fix some" />
     <MESSAGE value="add some domain" />
     <MESSAGE value="add hook" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hook" />
+    <MESSAGE value="fix workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix workflow" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NitWikit_Domain$cloudflare.coverage" NAME="cloudflare 覆盖结果" MODIFIED="1727653289328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend" />
     <SUITE FILE_PATH="coverage/NitWikit_Domain$cf.coverage" NAME="cf 覆盖结果" MODIFIED="1727661357061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend" />
-    <SUITE FILE_PATH="coverage/NitWikit_Domain$hook.coverage" NAME="hook 覆盖结果" MODIFIED="1727847914638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.github" />
+    <SUITE FILE_PATH="coverage/NitWikit_Domain$checker.coverage" NAME="checker 覆盖结果" MODIFIED="1727675876868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
     <SUITE FILE_PATH="coverage/NitWikit_Domain$freedns.coverage" NAME="freedns 覆盖结果" MODIFIED="1727759311784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend" />
+    <SUITE FILE_PATH="coverage/NitWikit_Domain$hook.coverage" NAME="hook 覆盖结果" MODIFIED="1727847914638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.github" />
     <SUITE FILE_PATH="coverage/NitWikit_Domain$dnsexit.coverage" NAME="dnsexit 覆盖结果" MODIFIED="1727779461680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend" />
     <SUITE FILE_PATH="coverage/NitWikit_Domain$dnspod.coverage" NAME="dnspod 覆盖结果" MODIFIED="1727913426864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/backend" />
-    <SUITE FILE_PATH="coverage/NitWikit_Domain$checker.coverage" NAME="checker 覆盖结果" MODIFIED="1727675876868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
   </component>
 </project>
