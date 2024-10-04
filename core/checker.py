@@ -1,10 +1,13 @@
 import ipaddress
 import socket
-from env import Request,disable_register
+from core.env import Request, disable_register
+
 
 class CheckError(Exception):
     def __init__(self, msg):
         self.msg = msg
+
+
 def check(domain_list):
     if not Request.subdomain.isalnum():
         raise CheckError("子域名只能包含数字和字母")
@@ -25,9 +28,9 @@ def check(domain_list):
         if not (65535 > int(Request.record_target_port) > 1):
             raise CheckError("端口必须在1~65535之间")
 
-    if Request.record_type in ["A","AAAA"]:
+    if Request.record_type in ["A", "AAAA"]:
         try:
-            ip=ipaddress.ip_address(Request.record_target)
+            ip = ipaddress.ip_address(Request.record_target)
             assert ip.is_global
         except ValueError:
             raise CheckError("目标IP地址不合法")

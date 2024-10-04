@@ -1,4 +1,4 @@
-from core.env import GitHubInfo, Request
+from core.env import Request
 import os
 import json
 
