@@ -25,9 +25,7 @@ jobs:
         with:
           issue_id: ${{ github.event.issue.number }}
           separator: '###'
-      - name: Chat
-        id: chat
-        run: python main.py
+      - run: python main.py
         with:
           GITHUB_ISSUE_NUMBER: ${{ github.event.issue.number }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
