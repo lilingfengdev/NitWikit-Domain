@@ -4,7 +4,7 @@ import json
 
 
 def init_payload():
-    payload = json.loads(os.environ.get("payload"))
+    payload = json.loads(os.environ.get("PAYLOAD"))
     Request.subdomain = payload["子域名名称"]
     Request.domain = payload["主域名"]
     Request.record_type = payload["记录类型"]
