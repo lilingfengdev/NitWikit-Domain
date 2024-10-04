@@ -34,7 +34,6 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           DNSPOD_USER_ID: ${{ secrets.DNSPOD_USER_ID}}
           DNSPOD_USER_TOKEN: ${{ secrets.DNSPOD_USER_TOKEN}}
-          FREE_DNS_EMAIL: ${{ secrets.FREE_DNS_EMAIL}}
-          FREE_DNS_PASSWORD: ${{ secrets.FREE_DNS_PASSWORD}}
+          EXITDNS_API_TOKEN: ${{ secrets.EXITDNS_API_TOKEN }}
           PAYLOAD: ${{ steps.parse.outputs.payload }}
 
