@@ -11,7 +11,7 @@ body:
   - type: input
     id: subdomain
     attributes:
-      label: 子域名名称
+      label: ">>子域名名称<<"
       description: 你需要的子域名
       placeholder: "nitwikit"
     validations:
@@ -19,7 +19,7 @@ body:
   - type: dropdown
     id: domain
     attributes:
-      label: 主域名
+      label: ">>主域名<<"
       description: 主域名
       options:
         - mcfun.us.kg
@@ -57,7 +57,7 @@ body:
   - type: dropdown
     id: record-type
     attributes:
-      label: 记录类型
+      label: ">>记录类型<<"
       description: 记录类型(IPV4:A,IPV6:AAAA)
       options:
         - A
@@ -68,7 +68,7 @@ body:
   - type: input
     id: target
     attributes:
-      label: 解析目标
+      label: ">>解析目标<<"
       description: 需要解析到的地址(不需要填端口)
       placeholder: "114.51.4.1"
     validations:
@@ -76,14 +76,14 @@ body:
   - type: input
     id: port
     attributes:
-      label: 解析目标端口的端口(启用SRV必填)
+      label: ">>解析目标端口的端口(启用SRV必填)<<"
       placeholder: "11451"
     validations:
       required: false
   - type: checkboxes
     id: srv
     attributes:
-      label: 创建 SRV
+      label: ">>创建 SRV<<"
       description: 创建SRV解析
       options:
         - label: 创建
