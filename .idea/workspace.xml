@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1f07ff-6052-4eb6-9be3-18cabae6e3e5" name="更改" comment="fix workflow">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/request.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/request.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/issue.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/issue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/payload.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/payload.py" afterDir="false" />
-    </list>
+    <list default="true" id="4c1f07ff-6052-4eb6-9be3-18cabae6e3e5" name="更改" comment="fix workflow" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +114,7 @@
       <workItem from="1727851397191" duration="10000" />
       <workItem from="1727863860070" duration="455000" />
       <workItem from="1727912032300" duration="1675000" />
-      <workItem from="1728048036099" duration="1263000" />
+      <workItem from="1728048036099" duration="1586000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -194,7 +188,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728048418449</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix workflow">
+      <option name="closed" value="true" />
+      <created>1728049743941</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728049743941</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix workflow">
+      <option name="closed" value="true" />
+      <created>1728050010836</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728050010836</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
