@@ -16,11 +16,6 @@ disable_register = [
     "page",
 ]
 
-
-class CloudFlareInfo:
-    api_token = os.environ.get("CLOUDFLARE_API_TOKEN").strip(),
-
-
 class DnsPodInfo:
     user_id = os.environ.get("DNSPOD_USER_ID"),
     user_token = os.environ.get("DNSPOD_USER_TOKEN"),
@@ -32,7 +27,7 @@ class ExitDNSInfo:
 
 class GitHubInfo:
     token = os.environ.get("GITHUB_TOKEN")
-    issue_number = int(os.environ.get("GITHUB_ISSUE_NUMBER"))
+    issue_number = os.environ.get("GITHUB_ISSUE_NUMBER")
 
 
 class Request:
