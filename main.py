@@ -11,8 +11,6 @@ domain = {
     "mcfun.us.kg": dns.CloudFlare,
     "nitwikit.us.kg": dns.CloudFlare,
     "yizhan.us.kg": dns.CloudFlare,
-    "playmc.imc.rip": dns.DnsPod,
-    "mc.imc.rip": dns.DnsPod,
     "llf.myredirect.us": dns.ExitDNS,
     "mc.lookin.at": dns.ExitDNS,
     "mcfun.findhere.org": dns.ExitDNS,
