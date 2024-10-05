@@ -17,8 +17,8 @@ disable_register = [
 ]
 
 class DnsPodInfo:
-    user_id = os.environ.get("DNSPOD_USER_ID"),
-    user_token = os.environ.get("DNSPOD_USER_TOKEN"),
+    user_id = os.environ.get("DNSPOD_USER_ID").strip(),
+    user_token = os.environ.get("DNSPOD_USER_TOKEN").strip(),
 
 
 class ExitDNSInfo:
