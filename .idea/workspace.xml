@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1f07ff-6052-4eb6-9be3-18cabae6e3e5" name="更改" comment="fix workflow" />
+    <list default="true" id="4c1f07ff-6052-4eb6-9be3-18cabae6e3e5" name="更改" comment="fix workflow">
+      <change beforePath="$PROJECT_DIR$/core/checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/checker.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,30 +45,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.cf.executor": "Run",
-    "Python.checker.executor": "Run",
-    "Python.cloudflare.executor": "Run",
-    "Python.dnsexit.executor": "Run",
-    "Python.dnspod.executor": "Run",
-    "Python.freedns.executor": "Run",
-    "Python.hook.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/NitWikit-Domain",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.cf.executor&quot;: &quot;Run&quot;,
+    &quot;Python.checker.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cloudflare.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dnsexit.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dnspod.executor&quot;: &quot;Run&quot;,
+    &quot;Python.freedns.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hook.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/NitWikit-Domain&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\NitWikit-Domain\core" />
@@ -115,6 +117,7 @@
       <workItem from="1727863860070" duration="455000" />
       <workItem from="1727912032300" duration="1675000" />
       <workItem from="1728048036099" duration="2669000" />
+      <workItem from="1728091225121" duration="114000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
