@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c1f07ff-6052-4eb6-9be3-18cabae6e3e5" name="更改" comment="fix workflow">
-      <change beforePath="$PROJECT_DIR$/core/checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/checker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/backend/cf.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/cf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/backend/dnsexit.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/backend/dnsexit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +120,7 @@
       <workItem from="1727863860070" duration="455000" />
       <workItem from="1727912032300" duration="1675000" />
       <workItem from="1728048036099" duration="2669000" />
-      <workItem from="1728091225121" duration="114000" />
+      <workItem from="1728091225121" duration="1057000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -247,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728051049493</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix workflow">
+      <option name="closed" value="true" />
+      <created>1728091388784</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1728091388784</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
