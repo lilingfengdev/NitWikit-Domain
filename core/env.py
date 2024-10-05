@@ -27,7 +27,7 @@ class ExitDNSInfo:
 
 class GitHubInfo:
     token = os.environ.get("GITHUB_TOKEN")
-    issue_number = os.environ.get("GITHUB_ISSUE_NUMBER")
+    issue_number = int(os.environ.get("GITHUB_ISSUE_NUMBER"))
 
 
 class Request:
