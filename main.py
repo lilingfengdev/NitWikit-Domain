@@ -64,7 +64,7 @@ def main():
         record_type="TXT",
         record_value=f"{issue.owner()}:{time.time()}"
     )
-    if Request.srv:
+    if Request.srv and not isinstance(manager, dns.ExitDNS):
         manager.create_record(
             subdomain="_minecraft._tcp." + Request.subdomain,
             record_type="SRV",

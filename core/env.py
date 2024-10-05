@@ -18,7 +18,7 @@ disable_register = [
 
 
 class CloudFlareInfo:
-    api_token = os.environ.get("CLOUDFLARE_API_TOKEN"),
+    api_token = os.environ.get("CLOUDFLARE_API_TOKEN").strip(),
 
 
 class DnsPodInfo:
